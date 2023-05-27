@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="дискриптион, который будет выдаваться при поиске"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="тут сылка на подключаемый файл css"
+      type="text/css"
+    />
+    <script src="путь к скрипту"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Заголовок</h1>
+    <img
+      src="https://www.codewars.com/users/practicezerg/badges/large"
+      alt="CodeWars"
+    /><br />
+    <img
+      src="https://www.codewars.com/users/practicezerg/badges/small"
+      alt="CodeWars"
+    /><br />
+    <img
+      src="https://www.codewars.com/users/practicezerg/badges/micro"
+      alt="CodeWars"
+    /><br />
+
+    <h2>Заголовок</h2>
+    <h3>Заголовок</h3>
+    <h6>Заголовок</h6>
+    <p>Этот <em>текст</em> будет <u>абзацем</u></p>
+    <p>Этот <strong>текст</strong> будет <strike>абзацем</strike></p>
+    <p><abbr title="Это пояснение для строки">набор непонятных слов</abbr></p>
+    <!-- используется поисковым роботом, что бы чекать адресс, если нужно -->
+    <a name="address"></a>
+    <address>Russia, Moscow</address>
+    <p>
+      Этот
+      <strike
+        ><strong
+          ><u><em>текст пробный</em></u></strong
+        ></strike
+      >
+    </p>
+    <small>Текст будет маленьким</small>
+    <big>Текст будет большим</big>
+    <!-- если писать в тексте кучу пробелов, то он их не учитывает.Для этого существует специальный тег 
+        (обычно применяют для кода)-->
+    <pre>сохраняет                все                 пробелы</pre>
+    <!-- цитата есть атрибут cite в нем указывается от куда цитата так же для робота(что бы не зажопили) -->
+    <blockquote cite="https:\\google.com">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ab
+      corrupti amet molestiae harum quaerat nulla quas necessitatibus laudantium
+      laborum possimus officia neque natus, quae quos cupiditate repellat
+      reprehenderit non debitis corporis repudiandae! Exercitationem, ad ipsa
+      eaque architecto quo accusamus nesciunt aliquam fuga ex et adipisci,
+      quaerat dolore, tempore voluptate!
+    </blockquote>
+    <p>сергей сказал:<q>да ебись оно конем</q></p>
+    <!-- создает линию -->
+    <hr />
+    <!-- создает пустую строку -->
+    <br />
+    <hr />
+    <p align="right">Текст справа</p>
+    <p align="left">Текст слева</p>
+    <p align="center">Текст в центре</p>
+    <p align="justify">Текст по ширине как в ворде</p>
+    <!-- у <ol> есть атрибут type (можно римские или цифры или буквы), есть аналог непронумированный список <ul>
+  start с какого элемента будет начинать
+reversed в обратном порядке -->
+    <ol type="I" start="4" reversed="reversed">
+      <li>Первый список</li>
+      <li>Второй список</li>
+      <li>...</li>
+    </ol>
+    <ul>
+      Пробный текст
+    </ul>
+    <!-- Ссылки Links -->
+    <a href="https://github.com/practicezerg">Мой Github</a><br />
+
+    <a
+      href="https://github.com/practicezerg"
+      target="_blank"
+      title="переход на мой гитхаб"
+      >Мой Github в новом окне</a
+    ><br />
+    <!-- можно ставить сылку на другую страничку точное место
+     <a href=base.html#address">переход на адрес</a>-->
+    <a href="#address">переход на адрес</a><br />
+    <a href="mailto:email@mail.ru">Email</a><br />
+    <!-- Изображения Image -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbGyg_oPdxivTQ51Gv6hWMpKtgZl68zgb3A&usqp=CAU"
+      alt="Волчара"
+      width="100px"
+      height="100px"
+      title="волчара"
+      align="center"
+    />
+    <!-- Таблицы -->
+    <table border="1">
+      <caption>
+        название таблицы
+      </caption>
+      <tr>
+        <th>заголовок1</th>
+        <th>заголовок2</th>
+        <th>заголовок3</th>
+        <th>заголовок4</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <br />
+    <table border="1" cellpadding="7" cellspacing="0">
+      <tr>
+        <!-- colspan сколько ячеек занимает -->
+        <td colspan="2" bgcolor="#D3EDF6" align="center">Ячейка 1</td>
+      </tr>
+      <tr>
+        <td valign="middle" align="center">ячейка2</td>
+        <td width="98%" valign="top">ячейка3</td>
+      </tr>
+    </table>
+    <a href="/comc.py">Скриптик</a>
+    <form name="имя формы" action="где обрабатывается" method="post">
+      <!-- тут мы делаем связку в label for ставим id того что должно подсвечиватся -->
+      <label for="name">Введите ваше имя:</label>
+      <input type="text" value="Поле для заполнения" />
+      <!--  maxlength максимальная длина вводимых символов -->
+      <input
+        type="text"
+        placeholder="Поле для заполнения"
+        name="name"
+        title="Введи что-нибудь"
+        maxlength="5"
+        id="name"
+      /><br />
+      <label for="date">День рождения:</label
+      ><input type="date" id="date" /><br />
+      <label for="male">Мужкской</label
+      ><input type="radio" name="state" id="male" />
+      <label for="female">Женский</label
+      ><input type="radio" name="state" id="female" /><br />
+      <label for="password">Введите пароль:</label
+      ><input type="password" id="password" /><br />
+      <input type="file" name="D" id="" /><br />
+      Можно ставить несколько <input type="checkbox" /><br />
+      в отличии от radio<input type="checkbox" /><br />
+      <!-- button для отправки js или ajax(без перезагрузки страницы)
+      submit для php(c перезагрузкой страницы) -->
+      <input type="button" value="Отправить button" />
+      <input type="submit" value="Отправить Submit" /><br />
+      Очистить всё<input
+        type="reset"
+        name="Очистить все"
+        id=""
+        value="Очистить"
+      /><br />
+    </form>
+    <h2 align="center">TextArea</h2>
+    <!-- Большое поле ввода -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+  </body>
+</html>
