@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'myfont'; /* Укажите имя шрифта, которое будете использовать */
+    src: url('../files/digitalcyrillic1.otf') format('opentype'); /* Путь к файлу шрифта и его формат */
+    font-weight: normal; /* Опционально: можно задать жирность (normal, bold и т.д.) */
+    font-style: normal;  /* Опционально: можно указать стиль (normal, italic) */
+}
+
+
+
+html, body {
+	height: 100%; /* Задаем высоту 100% для html и body */
+	width: 95%;         /* Занимают всю ширину контейнера */
+	margin: 0 auto;      /* Центрирование контейнера по горизонтали */
+	background-color: #3498db;
+}
+
+.container {
+	display: flex; /* Используем Flexbox для контейнера */
+	flex-direction: column; /* Располагаем элементы вертикально */
+	height: 100%; /* Высота контейнера 100% от окна */
+overflow: hidden;
+}
+
+.head_place {
+	background-color: #26323a; /* Цвет фона */
+	padding: 20px; /* Внутренние отступы */
+	color: white; /* Цвет текста */
+	position: sticky; /* Прикрепляет элемент к верху страницы */
+	top: 0; /* Располагает его вверху */
+	z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
+	margin-top: 20px; /* Отступ сверху 20 пикселей */
+	border-radius: 15px; /* Сделает элемент круглым */
+	height: 5%;
+	overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
+	display: flex; /* Flexbox для горизонтального размещения */
+	justify-content: space-between; /* Пространство между элементами */
+}
+
+.head_logo {
+	width:  10%;
+	margin-left: 3%;
+	
+}
+.head_logo img {
+	border-radius: 15px;
+    max-height: 50px; /* Ограничение высоты изображения */
+}
+
+.head_links ul {
+	display: flex; /* Flex для горизонтального размещения пунктов меню */
+	list-style: none; /* Убираем маркеры списка */
+}
+
+.head_links a {
+	text-decoration: none; /* Убираем подчеркивание ссылок */
+  }
+
+.head_links li {
+    margin-left: 20px; /* Расстояние между пунктами меню */
+}
+
+.clock_place {
+	border: 2px solid blue; /* Толщина 2px, сплошная линия, синий цвет */
+	
+}
+
+#clock {
+	/* font-size: 24px; */
+	font-family: 'myfont', sans-serif;
+	color: #1cd216;
+	margin: 0 auto;
+	justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+
+}
+
+
+#clock2 {
+	/* font-size: 24px; */
+	font-family: 'myfont', sans-serif;
+	color: #1cd216;
+}
+
+.clock {
+	background-color: rgb(2, 2, 2);
+	border: 2px solid rgb(64, 64, 244); /* Толщина 2px, сплошная линия, синий цвет */
+}
+
+.body_place {
+	display: flex; /* Для расположения левой и правой сторон горизонтально */
+	flex: 1; /* Занимает оставшееся пространство */
+	margin: 20px 0; /* Отступы сверху и снизу */
+	border-radius: 15px; /* Сделает элемент круглым */
+	text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+.left_side {
+	width: 15%; /* Ширина левой стороны */
+	background-color: #26323a; /* Цвет фона */
+	border-radius: 15px; /* Сделает элемент круглым */
+	text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+.right_side {
+	width: 85%; /* Ширина правой стороны */
+	background-color: #26323a; /* Цвет фона */
+	border-radius: 15px; /* Сделает элемент круглым */
+	margin-left: 15px;
+}
+
+.footer_place {
+	background-color: #26323a; /* Цвет фона */
+	padding: 20px; /* Внутренние отступы */
+	color: white; /* Цвет текста */
+	margin-top: auto; /* Позволяет помещать подвал внизу страницы */
+	border-radius: 15px; /* Сделает элемент круглым */
+	margin-bottom:15px;
+	height: 5%;
+}
+
