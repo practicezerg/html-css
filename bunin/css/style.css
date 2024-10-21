@@ -1,53 +1,52 @@
-@font-face {
-    font-family: 'myfont'; /* Укажите имя шрифта, которое будете использовать */
-    src: url('../files/digitalcyrillic1.otf') format('opentype'); /* Путь к файлу шрифта и его формат */
-    font-weight: normal; /* Опционально: можно задать жирность (normal, bold и т.д.) */
-    font-style: normal;  /* Опционально: можно указать стиль (normal, italic) */
-}
-
-
-
 html, body {
 	height: 100%; /* Задаем высоту 100% для html и body */
 	width: 95%;         /* Занимают всю ширину контейнера */
 	margin: 0 auto;      /* Центрирование контейнера по горизонтали */
-	background-color: #3498db;
+	background-color: #c9d5da;
 }
 
 .container {
 	display: flex; /* Используем Flexbox для контейнера */
 	flex-direction: column; /* Располагаем элементы вертикально */
 	height: 100%; /* Высота контейнера 100% от окна */
-overflow: hidden;
+	overflow: hidden;
 }
 
 .head_place {
-	background-color: #26323a; /* Цвет фона */
+	background-color: white; /* Цвет фона */
 	padding: 20px; /* Внутренние отступы */
-	color: white; /* Цвет текста */
 	position: sticky; /* Прикрепляет элемент к верху страницы */
 	top: 0; /* Располагает его вверху */
 	z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
 	margin-top: 20px; /* Отступ сверху 20 пикселей */
 	border-radius: 15px; /* Сделает элемент круглым */
-	height: 5%;
+	height: 100px;
 	overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
 	display: flex; /* Flexbox для горизонтального размещения */
-	justify-content: space-between; /* Пространство между элементами */
+
+	align-items: center;
 }
 
-.head_logo {
-	width:  10%;
-	margin-left: 3%;
-	
-}
+
+
 .head_logo img {
-	border-radius: 15px;
-    max-height: 50px; /* Ограничение высоты изображения */
+    max-height: 100%; /* Логотип не превышает высоту родительского контейнера */
+    height: auto; /* Поддержка пропорций */
+    max-width: 200px; /* Ограничиваем ширину логотипа (можно настроить по необходимости) */
+	object-fit: cover; /* Позволяет обрезать верх и низ */
+    object-position: center; /* Центрирует обрезку */
 }
 
+.head_logo:hover {
+	transform: scale(1.2);
+	}
+
+.head_links {
+	display: flex;
+    align-items: center; /* Центрируем ссылки по вертикали */
+}
 .head_links ul {
-	display: flex; /* Flex для горизонтального размещения пунктов меню */
+	display: block; /* Flex для горизонтального размещения пунктов меню */
 	list-style: none; /* Убираем маркеры списка */
 }
 
@@ -57,34 +56,60 @@ overflow: hidden;
 
 .head_links li {
     margin-left: 20px; /* Расстояние между пунктами меню */
+	position: relative;
+	float: left;
+}
+.head_links li a {
+	padding:15px;
+	font-size: 16px;
+	display:block;
+	text-align: center; /* Центрируем текст внутри ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.head_links li a:hover {
+	background-color: #c9d5da;
+	color:rgb(46, 139, 200);
 }
 
-.clock_place {
-	border: 2px solid blue; /* Толщина 2px, сплошная линия, синий цвет */
-	
+.login {
+	margin-left: auto; /* Автоматический отступ слева, чтобы "login" оказался справа */
 }
 
-#clock {
-	/* font-size: 24px; */
-	font-family: 'myfont', sans-serif;
-	color: #1cd216;
-	margin: 0 auto;
-	justify-content: center; /* Горизонтальное центрирование */
-    align-items: center; /* Вертикальное центрирование */
+.login a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: white; /* Цвет кнопки или ссылки */
+    color: #5a6072;
+    border-radius: 5px; /* Закругленные углы */
+	font-weight: bold; /* Жирный шрифт */
+    font-size: 20px; /* Размер шрифта (можно настроить по необходимости) */
+}
 
+.login a:hover {
+	background-color: #c9d5da;
+	color:rgb(46, 139, 200);
+	border: #5a6072;
+}
+
+nav ul li ul {
+	position:absolute;
+	left: 0;
+	width: 180px;
+	background:white;
+	display:none;
+}
+
+nav ul li ul li {
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.1);
 }
 
 
-#clock2 {
-	/* font-size: 24px; */
-	font-family: 'myfont', sans-serif;
-	color: #1cd216;
-}
 
-.clock {
-	background-color: rgb(2, 2, 2);
-	border: 2px solid rgb(64, 64, 244); /* Толщина 2px, сплошная линия, синий цвет */
-}
+
+
+
+
 
 .body_place {
 	display: flex; /* Для расположения левой и правой сторон горизонтально */
@@ -92,24 +117,17 @@ overflow: hidden;
 	margin: 20px 0; /* Отступы сверху и снизу */
 	border-radius: 15px; /* Сделает элемент круглым */
 	text-decoration: none; /* Убираем подчеркивание ссылок */
+	background-color: #c9d5da;
 }
 
-.left_side {
-	width: 15%; /* Ширина левой стороны */
-	background-color: #26323a; /* Цвет фона */
+.body_slide {
+	width: 100%; /* Ширина правой стороны */
 	border-radius: 15px; /* Сделает элемент круглым */
-	text-decoration: none; /* Убираем подчеркивание ссылок */
-}
-
-.right_side {
-	width: 85%; /* Ширина правой стороны */
-	background-color: #26323a; /* Цвет фона */
-	border-radius: 15px; /* Сделает элемент круглым */
-	margin-left: 15px;
+	background-color: #c9d5da; /* Цвет фона */
 }
 
 .footer_place {
-	background-color: #26323a; /* Цвет фона */
+	background-color: white; /* Цвет фона */
 	padding: 20px; /* Внутренние отступы */
 	color: white; /* Цвет текста */
 	margin-top: auto; /* Позволяет помещать подвал внизу страницы */
