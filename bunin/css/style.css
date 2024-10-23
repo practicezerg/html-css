@@ -2,7 +2,7 @@ html, body {
 	height: 100%; /* Задаем высоту 100% для html и body */
 	width: 95%;         /* Занимают всю ширину контейнера */
 	margin: 0 auto;      /* Центрирование контейнера по горизонтали */
-	background-color: #c9d5da;
+	background-color: #E8FAFF;
 }
 
 .container {
@@ -67,7 +67,7 @@ html, body {
     text-decoration: none; /* Убираем подчеркивание */
 }
 .head_links li a:hover {
-	background-color: #c9d5da;
+	background-color: #E8FAFF;
 	color:rgb(46, 139, 200);
 }
 
@@ -86,7 +86,7 @@ html, body {
 }
 
 .login a:hover {
-	background-color: #c9d5da;
+	background-color: #E8FAFF;
 	color:rgb(46, 139, 200);
 	border: #5a6072;
 }
@@ -104,7 +104,14 @@ nav ul li ul li {
 	border: 1px solid rgba(0,0,0,.1);
 }
 
+nav ul li ul li ul {
+	left: 180px;
+	top:0;
+}
 
+nav ul li:hover > ul {
+	display: initial;
+}
 
 
 
@@ -117,13 +124,13 @@ nav ul li ul li {
 	margin: 20px 0; /* Отступы сверху и снизу */
 	border-radius: 15px; /* Сделает элемент круглым */
 	text-decoration: none; /* Убираем подчеркивание ссылок */
-	background-color: #c9d5da;
+	background-color: #E8FAFF;
 }
 
 .body_slide {
 	width: 100%; /* Ширина правой стороны */
 	border-radius: 15px; /* Сделает элемент круглым */
-	background-color: #c9d5da; /* Цвет фона */
+	background-color: #E8FAFF; /* Цвет фона */
 }
 
 .footer_place {
