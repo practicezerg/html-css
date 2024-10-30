@@ -1,8 +1,9 @@
 html, body {
 	height: 100%; /* Задаем высоту 100% для html и body */
-	width: 95%;         /* Занимают всю ширину контейнера */
+	width: 100%;         /* Занимают всю ширину контейнера */
 	margin: 0 auto;      /* Центрирование контейнера по горизонтали */
 	background-color: #E8FAFF;
+	font-family: inherit;
 }
 
 .container {
@@ -20,11 +21,12 @@ html, body {
 	z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
 	margin-top: 20px; /* Отступ сверху 20 пикселей */
 	border-radius: 15px; /* Сделает элемент круглым */
-	height: 100px;
-	overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
+	height: 50px;
+	/*overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
 	display: flex; /* Flexbox для горизонтального размещения */
-
+	justify-content: space-between;
 	align-items: center;
+
 }
 
 
@@ -44,29 +46,33 @@ html, body {
 .head_links {
 	display: flex;
     align-items: center; /* Центрируем ссылки по вертикали */
-}
-.head_links ul {
-	display: block; /* Flex для горизонтального размещения пунктов меню */
-	list-style: none; /* Убираем маркеры списка */
+	justify-content: center;
+	flex: 2;
+
 }
 
-.head_links a {
-	text-decoration: none; /* Убираем подчеркивание ссылок */
-  }
-
-.head_links li {
-    margin-left: 20px; /* Расстояние между пунктами меню */
+.head_links nav ul li {
 	position: relative;
-	float: left;
+	float:left;
+	list-style:none;
+	border-radius: 5px; /* Закругленные углы */
+	font-weight: bold; /* Жирный шрифт */
+	font-family: Arial, Helvetica, sans-serif;
+
+
 }
-.head_links li a {
-	padding:15px;
-	font-size: 16px;
-	display:block;
-	text-align: center; /* Центрируем текст внутри ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
+
+.head_links nav ul li a{
+	padding: 15px;
+	display: block;
+	font-family: inherit;
+	list-style:none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: #5a6072;
 }
-.head_links li a:hover {
+
+.head_links nav ul li a:hover {
 	background-color: #E8FAFF;
 	color:rgb(46, 139, 200);
 }
@@ -120,17 +126,28 @@ nav ul li:hover > ul {
 
 .body_place {
 	display: flex; /* Для расположения левой и правой сторон горизонтально */
-	flex: 1; /* Занимает оставшееся пространство */
+	/*flex: 1; /* Занимает оставшееся пространство */
 	margin: 20px 0; /* Отступы сверху и снизу */
 	border-radius: 15px; /* Сделает элемент круглым */
 	text-decoration: none; /* Убираем подчеркивание ссылок */
 	background-color: #E8FAFF;
+	justify-content: center;
+	align-items: center; /* Вертикальное центрирование */
+
+
 }
 
 .body_slide {
 	width: 100%; /* Ширина правой стороны */
 	border-radius: 15px; /* Сделает элемент круглым */
 	background-color: #E8FAFF; /* Цвет фона */
+	display: flex; /* Используем Flexbox для центрирования содержимого внутри */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+.img {
+	width: 100%; /* Ширина правой стороны */
 }
 
 .footer_place {
@@ -141,5 +158,6 @@ nav ul li:hover > ul {
 	border-radius: 15px; /* Сделает элемент круглым */
 	margin-bottom:15px;
 	height: 5%;
+	
 }
 
