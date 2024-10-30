@@ -1,163 +1,170 @@
-html, body {
-	height: 100%; /* Задаем высоту 100% для html и body */
-	width: 100%;         /* Занимают всю ширину контейнера */
-	margin: 0 auto;      /* Центрирование контейнера по горизонтали */
-	background-color: #E8FAFF;
-	font-family: inherit;
+html,
+body {
+  height: 100%; /* Задаем высоту 100% для html и body */
+  width: 100%; /* Занимают всю ширину контейнера */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  background-color: #e8faff;
+  font-family: inherit;
 }
 
 .container {
-	display: flex; /* Используем Flexbox для контейнера */
-	flex-direction: column; /* Располагаем элементы вертикально */
-	height: 100%; /* Высота контейнера 100% от окна */
-	overflow: hidden;
+  display: flex; /* Используем Flexbox для контейнера */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  height: 100%; /* Высота контейнера 100% от окна */
+  overflow: hidden;
 }
 
 .head_place {
-	background-color: white; /* Цвет фона */
-	padding: 20px; /* Внутренние отступы */
-	position: sticky; /* Прикрепляет элемент к верху страницы */
-	top: 0; /* Располагает его вверху */
-	z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
-	margin-top: 20px; /* Отступ сверху 20 пикселей */
-	border-radius: 15px; /* Сделает элемент круглым */
-	height: 50px;
-	/*overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
-	display: flex; /* Flexbox для горизонтального размещения */
-	justify-content: space-between;
-	align-items: center;
-
+  background-color: white; /* Цвет фона */
+  padding: 20px; /* Внутренние отступы */
+  position: sticky; /* Прикрепляет элемент к верху страницы */
+  top: 0; /* Располагает его вверху */
+  z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
+  margin-top: 20px; /* Отступ сверху 20 пикселей */
+  border-radius: 15px; /* Сделает элемент круглым */
+  height: 50px;
+  /*overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
+  display: flex; /* Flexbox для горизонтального размещения */
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень со всех сторон */
 }
 
+.head_logo {
+  position: absolute; /* Позиционируем логотип абсолютно */
+  top: 50%; /* Центрируем по вертикали */
+  transform: translateY(-50%); /* Корректируем позицию для центрирования */
+  width: 100%;
+  max-width: 200px; /* Ограничиваем максимальную ширину логотипа */
+}
 
+.head_logo a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
 
 .head_logo img {
-    max-height: 100%; /* Логотип не превышает высоту родительского контейнера */
-    height: auto; /* Поддержка пропорций */
-    max-width: 200px; /* Ограничиваем ширину логотипа (можно настроить по необходимости) */
-	object-fit: cover; /* Позволяет обрезать верх и низ */
-    object-position: center; /* Центрирует обрезку */
+  width: 100%; /* Занимает всю ширину родителя */
+  height: auto; /* Поддерживает пропорции изображения */
+  max-width: 200px; /* Ограничивает максимальную ширину изображения */
+  max-height: 50px; /* Логотип не превышает высоту .head_place */
+  object-fit: cover; /* Обрезает изображение, чтобы оно полностью заполняло контейнер */
+  object-position: center; /* Центрирует обрезку */
 }
 
-.head_logo:hover {
-	transform: scale(1.2);
-	}
+.head_logo img:hover {
+  transform: scale(1.2);
+}
 
 .head_links {
-	display: flex;
-    align-items: center; /* Центрируем ссылки по вертикали */
-	justify-content: center;
-	flex: 2;
-
+  display: flex;
+  align-items: center; /* Центрируем ссылки по вертикали */
+  justify-content: center;
+  flex: 2;
 }
 
 .head_links nav ul li {
-	position: relative;
-	float:left;
-	list-style:none;
-	border-radius: 5px; /* Закругленные углы */
-	font-weight: bold; /* Жирный шрифт */
-	font-family: Arial, Helvetica, sans-serif;
-
-
+  position: relative;
+  float: left;
+  list-style: none;
+  border-radius: 5px; /* Закругленные углы */
+  font-weight: bold; /* Жирный шрифт */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.head_links nav ul li a{
-	padding: 15px;
-	display: block;
-	font-family: inherit;
-	list-style:none;
-	text-decoration: none;
-	box-sizing: border-box;
-	color: #5a6072;
+.head_links nav ul li a {
+  padding: 15px;
+  display: block;
+  font-family: inherit;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #5a6072;
 }
 
 .head_links nav ul li a:hover {
-	background-color: #E8FAFF;
-	color:rgb(46, 139, 200);
+  background-color: #e8faff;
+  color: rgb(46, 139, 200);
 }
 
 .login {
-	margin-left: auto; /* Автоматический отступ слева, чтобы "login" оказался справа */
+  margin-left: auto; /* Автоматический отступ слева, чтобы "login" оказался справа */
 }
 
 .login a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: white; /* Цвет кнопки или ссылки */
-    color: #5a6072;
-    border-radius: 5px; /* Закругленные углы */
-	font-weight: bold; /* Жирный шрифт */
-    font-size: 20px; /* Размер шрифта (можно настроить по необходимости) */
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: white; /* Цвет кнопки или ссылки */
+  color: #5a6072;
+  border-radius: 5px; /* Закругленные углы */
+  font-weight: bold; /* Жирный шрифт */
+  font-size: 20px; /* Размер шрифта (можно настроить по необходимости) */
+  background-color: rgb(46, 139, 200);
+  color: white;
+  border: 1px solid #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 100); /* Тень со всех сторон */
 }
 
 .login a:hover {
-	background-color: #E8FAFF;
-	color:rgb(46, 139, 200);
-	border: #5a6072;
+  background-color: rgb(16, 75, 114);
+  color: white;
+  border: 1px solid #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 100); /* Тень со всех сторон */
 }
 
 nav ul li ul {
-	position:absolute;
-	left: 0;
-	width: 180px;
-	background:white;
-	display:none;
+  position: absolute;
+  left: 0;
+  width: 180px;
+  background: white;
+  display: none;
 }
 
 nav ul li ul li {
-	width: 100%;
-	border: 1px solid rgba(0,0,0,.1);
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 nav ul li ul li ul {
-	left: 180px;
-	top:0;
+  left: 180px;
+  top: 0;
 }
 
 nav ul li:hover > ul {
-	display: initial;
+  display: initial;
 }
 
-
-
-
-
-
 .body_place {
-	display: flex; /* Для расположения левой и правой сторон горизонтально */
-	/*flex: 1; /* Занимает оставшееся пространство */
-	margin: 20px 0; /* Отступы сверху и снизу */
-	border-radius: 15px; /* Сделает элемент круглым */
-	text-decoration: none; /* Убираем подчеркивание ссылок */
-	background-color: #E8FAFF;
-	justify-content: center;
-	align-items: center; /* Вертикальное центрирование */
-
-
+  display: flex; /* Для расположения левой и правой сторон горизонтально */
+  /*flex: 1; /* Занимает оставшееся пространство */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  border-radius: 15px; /* Сделает элемент круглым */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  background-color: #e8faff;
+  justify-content: center;
+  align-items: center; /* Вертикальное центрирование */
 }
 
 .body_slide {
-	width: 100%; /* Ширина правой стороны */
-	border-radius: 15px; /* Сделает элемент круглым */
-	background-color: #E8FAFF; /* Цвет фона */
-	display: flex; /* Используем Flexbox для центрирования содержимого внутри */
-    justify-content: center; /* Горизонтальное центрирование */
-    align-items: center; /* Вертикальное центрирование */
+  width: 100%; /* Ширина правой стороны */
+  border-radius: 15px; /* Сделает элемент круглым */
+  background-color: #e8faff; /* Цвет фона */
+  display: flex; /* Используем Flexbox для центрирования содержимого внутри */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
 }
 
 .img {
-	width: 100%; /* Ширина правой стороны */
+  width: 100%; /* Ширина правой стороны */
 }
 
 .footer_place {
-	background-color: white; /* Цвет фона */
-	padding: 20px; /* Внутренние отступы */
-	color: white; /* Цвет текста */
-	margin-top: auto; /* Позволяет помещать подвал внизу страницы */
-	border-radius: 15px; /* Сделает элемент круглым */
-	margin-bottom:15px;
-	height: 5%;
-	
+  background-color: white; /* Цвет фона */
+  padding: 20px; /* Внутренние отступы */
+  color: white; /* Цвет текста */
+  margin-top: auto; /* Позволяет помещать подвал внизу страницы */
+  border-radius: 15px; /* Сделает элемент круглым */
+  margin-bottom: 15px;
+  height: 5%;
 }
-
