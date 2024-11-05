@@ -4,7 +4,7 @@ body {
   width: 100%; /* Занимают всю ширину контейнера */
   margin: 0 auto; /* Центрирование контейнера по горизонтали */
   background-color: #e8faff;
-  font-family: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -31,8 +31,8 @@ body {
 
 .head_logo {
   position: absolute; /* Позиционируем логотип абсолютно */
-  top: 50%; /* Центрируем по вертикали */
-  transform: translateY(-50%); /* Корректируем позицию для центрирования */
+  top: 30%; /* Центрируем по вертикали */
+  transform: translateY(-50%, -30%); /* Корректируем позицию для центрирования */
   width: 100%;
   max-width: 200px; /* Ограничиваем максимальную ширину логотипа */
 }
@@ -144,6 +144,28 @@ nav ul li:hover > ul {
   justify-content: center;
   align-items: center; /* Вертикальное центрирование */
 }
+
+
+.swap_steps {
+    margin-top: 20px; /* отступ сверху, настройте значение по вашему усмотрению */
+	margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /* увеличивает расстояние между элементами внутри swap_steps */
+    padding: 10px; /* добавляем внутренние отступы */
+}
+
+.back_swap, .next_swap {
+    flex: 1; /* Делаем элементы гибкими по ширине */
+}
+
+.back_swap img, .next_swap img {
+
+    height: auto;
+    border-radius: 8px; /* Добавляет небольшое закругление для изображения, по желанию */
+}
+
 
 .body_slide {
   width: 100%; /* Ширина правой стороны */

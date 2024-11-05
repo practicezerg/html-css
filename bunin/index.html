@@ -54,31 +54,24 @@
 				<a href="https://metabi.ru/auth/login?">Log in</a>
 			</div>
 		</div>
+		<div class="swap_steps">
+			<div class="back_swap">
+				<img id="image_left" src="files/pic/pic_left.jpg">
+			</div>
+			<div class="next_swap">
+				<img id="image_right" src="files/pic/pic_right.jpg">
+			</div>
+		</div>
 		<div class="body_place">
+
 			<div class="body_slide">
-				<img id="image" src="files/pic/slaid_1.jpg" alt="image 1" onclick="change_image()">
+				<img id="image" src="files/pic/slaid_0.svg">
 			</div>
 		</div>
 		<div class="footer_place">
 
 		</div>
 	<!-- </div> -->
-	<script>
-        const images = [
-            'files/pic/slaid_1.jpg',
-			'files/pic/slaid_2.jpg',
-			'files/pic/slaid_3.jpg',
-			'files/pic/slaid_4.jpg',
-			'files/pic/slaid_5.jpg',
-			'files/pic/slaid_6.jpg',
-        ];
 
-        let currentIndex = 0;
-
-        function change_image() {
-            currentIndex = (currentIndex + 1) % images.length; // Увеличиваем индекс и используем остаток от деления
-            document.getElementById('image').src = images[currentIndex]; // Меняем изображение
-        }
-    </script>
 </body>
 </html>

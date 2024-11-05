@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1600"
+   height="800"
+   viewBox="0 0 1600 800.00002"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="Слайд1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.75462963"
+     inkscape:cx="836.83436"
+     inkscape:cy="362.42945"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="140.46626"
+       y="344.53989"
+       width="1604.7607"
+       height="602.94476"
+       id="rect4" />
+    <rect
+       x="181.54601"
+       y="193.4724"
+       width="1568.9816"
+       height="757.98773"
+       id="rect3" />
+    <rect
+       x="247.80368"
+       y="282.25766"
+       width="1455.0184"
+       height="646.67487"
+       id="rect2" />
+    <rect
+       x="184.19632"
+       y="304.78528"
+       width="1510.6749"
+       height="642.6994"
+       id="rect1" />
+  </defs>
+  <rect
+     style="display:none;opacity:1;fill:#e3f3f8;fill-opacity:0.305882"
+     id="rect11"
+     width="1872.4418"
+     height="867.97546"
+     x="-228.59506"
+     y="-107.38438" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline;opacity:1;fill:none"
+     transform="translate(-265.69936,-114.01014)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1"
+       x="663.11218"
+       y="431.86011"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="663.11218"
+         y="431.86011"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed'"><tspan
+   style="fill:#4d4d4d"
+   id="tspan6">Что такое</tspan> <tspan
+   style="fill:#2a7fff"
+   id="tspan7">Metabi</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:42.6667px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2a7fff;fill-opacity:1"
+       x="576.44171"
+       y="155.04294"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="576.44171"
+         y="155.04294"></tspan><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="576.44171"
+         y="208.37631" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:42.6667px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:885.99;display:inline;fill:#2a7fff;fill-opacity:1"
+       x="271.65643"
+       y="192.14725"
+       id="text10"
+       transform="translate(398.87117,287.55828)"><tspan
+         x="271.65643"
+         y="192.14725"
+         id="tspan5"><tspan
+           style="fill:#4d4d4d"
+           id="tspan1">    Сервис по разработке </tspan><tspan
+           style="fill:#4d4d4d"
+           id="tspan2">BI </tspan><tspan
+           style="fill:#4d4d4d"
+           id="tspan3">аналитики
+</tspan></tspan><tspan
+         x="271.65643"
+         y="245.48063"
+         id="tspan13"><tspan
+           style="fill:#4d4d4d"
+           id="tspan12">       с возможностью построения дашбордов своими руками
+</tspan></tspan><tspan
+         x="271.65643"
+         y="298.81401"
+         id="tspan15"><tspan
+   style="fill:#4d4d4d"
+   id="tspan14">          с помощью платформы </tspan>Metabase</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:42.6667px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#e3f3f8;fill-opacity:0.305882"
+     x="43.061375"
+     y="117.89169"
+     id="text11"><tspan
+       sodipodi:role="line"
+       id="tspan11"
+       x="43.061375"
+       y="117.89169" /></text>
+</svg>
