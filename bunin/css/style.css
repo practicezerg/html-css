@@ -20,7 +20,7 @@ body {
   position: sticky; /* Прикрепляет элемент к верху страницы */
   top: 0; /* Располагает его вверху */
   z-index: 1000; /* Обеспечивает, что шапка будет над другими элементами */
-  margin-top: 20px; /* Отступ сверху 20 пикселей */
+  /* margin-top: 20px; Отступ сверху 20 пикселей */
   height: 50px;
   /*overflow: hidden; /* родительском блоке не позволяет вложенному блоку выйти за пределы родителя, скрывая любой контент, который вылезает за его границы. */
   display: flex; /* Flexbox для горизонтального размещения */
@@ -63,6 +63,12 @@ body {
   flex: 2;
 }
 
+.head_links nav ul {
+  padding: 0; /* Убедитесь, что у списка нет отступов */
+  margin: 0;
+}
+
+
 .head_links nav ul li {
   position: relative;
   float: left;
@@ -102,19 +108,20 @@ body {
   background-color: rgb(46, 139, 200);
   color: white;
   border: 1px solid #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 100); /* Тень со всех сторон */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 100); Тень со всех сторон */
 }
 
 .login a:hover {
   background-color: rgb(16, 75, 114);
   color: white;
   border: 1px solid #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 100); /* Тень со всех сторон */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 100); Тень со всех сторон */
 }
+
 
 nav ul li ul {
   position: absolute;
-  left: 0;
+  right: 0;
   width: 180px;
   background: white;
   display: none;
@@ -126,7 +133,7 @@ nav ul li ul li {
 }
 
 nav ul li ul li ul {
-  left: 180px;
+  right: 180px;
   top: 0;
 }
 
@@ -136,6 +143,7 @@ nav ul li:hover > ul {
 
 .body_place {
   display: flex; /* Для расположения левой и правой сторон горизонтально */
+  gap: 10px; /* Расстояние между div */
   /*flex: 1; /* Занимает оставшееся пространство */
   margin: 20px 0; /* Отступы сверху и снизу */
   border-radius: 15px; /* Сделает элемент круглым */
@@ -146,19 +154,24 @@ nav ul li:hover > ul {
 }
 
 
-.swap_steps {
-    margin-top: 20px; /* отступ сверху, настройте значение по вашему усмотрению */
-	margin-left: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; /* увеличивает расстояние между элементами внутри swap_steps */
-    padding: 10px; /* добавляем внутренние отступы */
+.back_swap {
+  flex: 1; /* Каждая секция занимает одинаковую ширину */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Внутренние отступы для элементов */
+  border-radius: 8px; /* Закругленные углы */
 }
 
-.back_swap, .next_swap {
-    flex: 1; /* Делаем элементы гибкими по ширине */
+.next_swap {
+  flex: 1; /* Каждая секция занимает одинаковую ширину */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Внутренние отступы для элементов */
+  border-radius: 8px; /* Закругленные углы */
 }
+
 
 .back_swap img, .next_swap img {
 
@@ -166,26 +179,46 @@ nav ul li:hover > ul {
     border-radius: 8px; /* Добавляет небольшое закругление для изображения, по желанию */
 }
 
+.back_swap img:hover {
+	transform: scale(1.2) rotate(15deg); /* Увеличение и поворот */
+	/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); Тень */
+	cursor: pointer; /* Указывает на интерактивность элемента */
+}
+
+.next_swap img:hover {
+	transform: scale(1.2) rotate(15deg); /* Увеличение и поворот */
+	/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); Тень */
+	cursor: pointer; /* Указывает на интерактивность элемента */
+}
+
 
 .body_slide {
-  width: 100%; /* Ширина правой стороны */
-  border-radius: 15px; /* Сделает элемент круглым */
-  background-color: #e8faff; /* Цвет фона */
-  display: flex; /* Используем Flexbox для центрирования содержимого внутри */
-  justify-content: center; /* Горизонтальное центрирование */
-  align-items: center; /* Вертикальное центрирование */
+  flex: 1; /* Каждая секция занимает одинаковую ширину */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Внутренние отступы для элементов */
+  border-radius: 8px; /* Закругленные углы */
 }
 
-.img {
+/* .img {
   width: 100%; /* Ширина правой стороны */
-}
+/* } */ 
 
 .footer_place {
+  position: fixed; /* Фиксируем элемент относительно окна браузера */
+  bottom: 0; /* Привязываем к нижней части экрана */
+  left: 0; /* Привязываем к левой части экрана */
+  width: 100%; /* Элемент занимает всю ширину экрана */
+  height: 100px; /* Высота футера (можно изменить по необходимости) */
   background-color: white; /* Цвет фона */
-  padding: 20px; /* Внутренние отступы */
-  color: white; /* Цвет текста */
-  margin-top: auto; /* Позволяет помещать подвал внизу страницы */
-  border-radius: 15px; /* Сделает элемент круглым */
-  margin-bottom: 15px;
-  height: 5%;
+  border-radius: 0; /* Убираем закругление, если оно не нужно */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень сверху (опционально) */
+  z-index: 1000; /* Устанавливаем высокий z-index, чтобы элемент был над остальным контентом */
+  display: flex; /* Flexbox для удобного выравнивания содержимого */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  color: #5a6072; /* Цвет текста */
+  font-size: 16px; /* Размер шрифта (можно настроить по необходимости) */
 }
+

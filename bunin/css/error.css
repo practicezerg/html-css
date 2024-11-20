@@ -1,0 +1,11 @@
+body {
+	/* Указываем путь к картинке */
+	background-image: url('/files/pic/404.jpg'); 
+	
+	/* Настройки фона */
+	background-size: cover; /* Растянуть на весь экран */
+	background-position: center; /* Центрировать */
+	background-repeat: no-repeat; /* Отключить повторение */
+	margin: 0; /* Убираем отступы */
+	height: 100vh; /* Высота экрана */
+}
